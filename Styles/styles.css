@@ -1,5 +1,9 @@
+main {
+    max-width: 840px;
+}
+
 nav {
-    background-color: steelblue;
+    background-color: #0b0b0b;
     padding: 10px;
 }
 
@@ -10,10 +14,10 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: #1b143e;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -22,5 +26,32 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba (0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #0b0b0b;
+    color: #f0ebeb;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
