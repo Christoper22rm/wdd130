@@ -6,17 +6,16 @@
 
 main {
     max-width: 840px;
-}
-
-header {
-    background-color: #0b0b0b;
+    margin: 1rem;
+    grid-column: 2/3;
 }
 
 nav {
+    background-color: steelblue;
+    padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10px 0;
 }
 
 nav a {
@@ -42,26 +41,30 @@ nav a:focus {
     outline: 2px solid #fff;
 }
 
-.container {
-    width: 80%;
+header, .grid, footer {
+    max-width: 840px;
     margin: 0 auto;
-    background-color: #fff; 
-    padding: 30px;
-    border: 1px solid #ccc;
-    overflow: hidden;
 }
+.grid {
+    display: grid;
+    align-items: center;
+  }
 
 h1 {
     color: #1b143e;
     text-align: left;
 }
 
+hr {
+    color: #1b143e;
+}
+
 .profile-image {
-    width: 150px;
+    width: 140px;
     height: auto;
     border: 1px solid steelblue;
     float: right;
-    margin-left: 20px; 
+    margin: 10px; 
 }
 
 p {
@@ -69,11 +72,8 @@ p {
     margin-top: 0;
 }
 
-
-/* Class Selectors */
-
 .box {
-    margin: 1rem;
+    margin: 10px;
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
     background-color: #ddd;
@@ -82,14 +82,13 @@ p {
 }
 
 aside {
-    width: 20em;
-    margin: 1rem;
-    border: 1px solid rgba (0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #0b0b0b;
+    display: block;
+    width: 20rem;
     color: #f0ebeb;
     text-align: center;
     position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1/2;
 }
 
 aside img {
