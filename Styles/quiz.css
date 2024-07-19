@@ -1,6 +1,4 @@
-/* quiz.css */
 
-/* Basic reset and body styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -9,7 +7,7 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Header styling */
+
 header {
     background-color: #333;
     color: #fff;
@@ -21,7 +19,6 @@ header h1 {
     margin: 0;
 }
 
-/* Main content styling */
 main {
     max-width: 600px;
     margin: 20px auto;
@@ -31,7 +28,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Form fieldset styling */
 fieldset {
     border: none;
     padding: 0;
@@ -43,7 +39,6 @@ legend {
     margin-bottom: 1em;
 }
 
-/* Form element styling */
 form div {
     margin-bottom: 1em;
 }
