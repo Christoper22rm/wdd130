@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap');
+
+:root {
+    --primary-color: #023047;
+    --secondary-color: #FFB703;
+    --accent-color: #FB8500;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 0 50px;
+    height: 150px;
+}
+
+.navbar-logo img {
+    width: 130px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    background-color: var(--button-bg-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #f4f4f4;
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.1);
+}
+
+.navbar-links a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 0;
+    bottom: 50%;
+    right: 0;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::after {
+    height: 100%;
+    bottom: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#contact-info p, #contact-info iframe {
+    margin: 10px 0;
+}
+
+#employees {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.employee {
+    text-align: center;
+}
+
+.employee img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+}
+
+#contact-form input[type="text"], 
+#contact-form input[type="email"], 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#contact-form input[type="radio"], 
+#contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+
+
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 34px;
+    height: 34px;
+}

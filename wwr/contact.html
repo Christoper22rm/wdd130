@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact | Rafting Company</title>
+    <meta name="description" content="page for our customers to contact us">
+    <meta name="author" content="Christoper Calvachi">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="navbar-logo"><img src="images/logo.png" alt="Logo" width="50"></a>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h1>Contact Us</h1>
+            <p>Address: 123 Rafting Lane, River City, RC 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@raftingcompany.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=your-google-map-embed-code" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section id="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="/wwr/images/Employee1.jpg" alt="Employee 1">
+                <p>John Doe - Guide</p>
+            </div>
+            <div class="employee">
+                <img src="/wwr/images/employee2.jpg" alt="Employee 2">
+                <p>Jane Smith - Manager</p>
+            </div>
+            <div class="employee">
+                <img src="/wwr/images/employee3.jpg" alt="Employee 3">
+                <p>Mike Johnson - Instructor</p>
+            </div>
+        </section>
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <p>Purpose of the message:</p>
+                <input type="radio" id="general" name="purpose" value="general" required>
+                <label for="general">General Inquiry</label>
+                
+                <input type="radio" id="reservation" name="purpose" value="reservation" required>
+                <label for="reservation">Reservation Question</label>
+                
+                <input type="radio" id="suggestion" name="purpose" value="suggestion" required>
+                <label for="suggestion">Website Suggestion</label>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Rafting Project. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
