@@ -114,8 +114,6 @@ main {
   background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
   background-size: cover;
   background-position: center;
-  
-/*  this is where the magic happens:  */
   background-attachment: fixed;
 }
 
@@ -134,7 +132,7 @@ a {
   display: inline-block;
   padding: 1em 3.5em;
   background-color: var(--color);
-  color: white;
+  color: (--accent-color);
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 0.3em;
@@ -148,6 +146,10 @@ a {
   width: 100%;
   min-height: 60vh;
   background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .second {
@@ -203,6 +205,38 @@ h3 {
 .second {
   flex-direction: row;
   gap: 1.6em;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.about-us img {
+    width: 50%;
+    height: auto;
+}
+
+.about-us .about-text {
+    padding: 2rem;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* ============= FOOTER =============== */

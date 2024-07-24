@@ -14,6 +14,8 @@ body {
     color: var(--text-color);
 }
 
+/* ============= NAVBAR =============== */
+
 .navbar {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -176,6 +178,8 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* ============= FOOTER =============== */
 
 footer {
     background-color: var(--primary-color);
