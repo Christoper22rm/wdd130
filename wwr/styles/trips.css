@@ -14,6 +14,9 @@ body {
     color: var(--text-color);
 }
 
+
+/* ============= NAVBAR =============== */
+
 .navbar {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -90,69 +93,71 @@ body {
 }
 
 main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-#contact-info p, #contact-info iframe {
-    margin: 10px 0;
-}
-
-#employees {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.employee {
-    text-align: center;
-}
-
-.employee img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 50%;
-}
-
-#contact-form form {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
 }
 
-#contact-form label {
-    margin-top: 10px;
-}
-
-#contact-form input[type="text"], 
-#contact-form input[type="email"], 
-#contact-form textarea {
+.excursion {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    overflow: hidden;
+    max-width: 600px;
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-#contact-form input[type="radio"], 
-#contact-form input[type="checkbox"] {
-    margin-right: 5px;
+.excursion:hover {
+    transform: scale(1.05);
 }
 
-#contact-form button {
-    margin-top: 20px;
-    padding: 10px;
+.excursion img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.excursion h2 {
+    font-size: 1.75rem;
+    margin: 1rem 0;
+}
+
+.excursion p {
+    font-size: 1rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.equipo {
+    text-align: left;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.equipo li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn {
     background-color: #333;
-    color: white;
+    color: #fff;
     border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
-#contact-form button:hover {
+.btn:hover {
     background-color: #555;
 }
+
 
 
 /* ============= FOOTER =============== */
